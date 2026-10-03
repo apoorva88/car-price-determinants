@@ -18,7 +18,7 @@ jupyter lab prompt_II.ipynb
 - **Mileage and age matter most:** Newer model years and lower odometer readings are consistently associated with higher prices.
 - **Configuration and brand:** Fuel type, drivetrain, body type, title status, and manufacturer shift median prices after accounting for age and mileage in regression models.
 - **Data quality:** Many listings have missing condition/size fields or invalid prices ($0 or extreme outliers); models use cleaned rows (e.g., price between $5K and $200K, year ≥ 1990).
-- **Modeling:** Linear, Ridge, and Random Forest regressors were compared with cross-validation and hyperparameter tuning; Ridge coefficients and test-set **R²**, **RMSE**, and **MAE** support interpretable pricing guidance.
+- **Modeling:** Linear, Ridge, and Lasso regressors were compared with cross-validation and hyperparameter tuning; Ridge/Lasso coefficients and test-set **R²**, **RMSE**, and **MAE** support interpretable pricing guidance.
 - **Recommendations for dealers:** Prioritize newer, lower-mileage units; avoid or discount salvage-title inventory; use model predictions as a pricing assistant alongside inspections and local market knowledge.
 
 ## Repository layout
